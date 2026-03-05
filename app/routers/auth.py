@@ -58,7 +58,7 @@ async def send_otp(
         # Generate 4-digit OTP
         otp = SecurityUtils.generate_otp(length=4)
         
-        text_msg = f"OTP for Login Transaction on CelebHub is {otp}. Do not share this OTP to anyone. -MySira Labs"
+        text_msg = f"OTP for Login Transaction on celeqthor is {otp}. Do not share this OTP to anyone. -MySira Labs"
 
         sms_sent = await send_sms_country_otp(mobile.replace("+", ""), text_msg)
 

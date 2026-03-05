@@ -79,7 +79,7 @@ class AuthService:
         if not success:
             return False
         
-        msg = f"OTP for Login Transaction on CelebHub is {otp}. Do not share this OTP to anyone. -CelebHub"
+        msg = f"OTP for Login Transaction on celeqthor is {otp}. Do not share this OTP to anyone. -Mysira Labs"
         return await self.send_sms_otp(mobile.replace("+", ""), msg)
 
     def verify_otp(self, mobile: str, otp: str) -> bool:

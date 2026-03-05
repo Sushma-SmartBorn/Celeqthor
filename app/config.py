@@ -8,7 +8,7 @@ load_dotenv()
 
 class Settings(BaseSettings):
     # Application
-    APP_NAME: str = "CelebHub"
+    APP_NAME: str = "Celeqthor"
     DEBUG: bool = os.getenv("DEBUG", "True").lower() == "true"
     LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
     API_V1_PREFIX: str = "/api/v1"

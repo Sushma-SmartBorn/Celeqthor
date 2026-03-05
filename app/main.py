@@ -12,10 +12,7 @@ import logging
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(
-    title=settings.APP_NAME,
-    version="1.0.0"
-)
+app = FastAPI(title=settings.APP_NAME,version="1.0.0")
 
 logger = logging.getLogger(__name__)
 
@@ -68,5 +65,7 @@ async def health_check():
         "status": "online",
         "redis": "healthy" if redis_healthy else "unhealthy"
     }
+
+
 
 app.include_router(auth.router, prefix=f"{settings.API_V1_PREFIX}/auth", tags=["Auth"])
