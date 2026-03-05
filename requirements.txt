@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+redis
+httpx
+pydantic-settings
+python-dotenv
+python-jose
+pytz
